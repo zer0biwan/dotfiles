@@ -1,6 +1,6 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
-	/*Icon*/	     /*Command*/		 /*Update Interval*/	/*Update Signal*/
+	/*Icon*/	     /*Command*/         	 /*Update Interval*/	/*Update Signal*/
 
 	/*{"^c#198388^^d^ ", "~/.local/bin/.m",	              60,		       1},*/
 	
