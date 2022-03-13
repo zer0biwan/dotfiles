@@ -3,7 +3,7 @@
 /* appearance */
 static const unsigned int borderpx       = 0;   /* border pixel of windows */
 static const unsigned int snap           = 32;  /* snap pixel */
-static const unsigned int gappih         = 4;  /* horiz inner gap between windows */
+static const unsigned int gappih         = 4;  /* horiz inner gap  between windows */
 static const unsigned int gappiv         = 4;  /* vert inner gap between windows */
 static const unsigned int gappoh         = 4;  /* horiz outer gap between windows and screen edge */
 static const unsigned int gappov         = 4;  /* vert outer gap between windows and screen edge */
