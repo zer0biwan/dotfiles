@@ -1,0 +1,24 @@
+---
+version: "2.1"
+services:
+  airsonic-advanced:
+    image: lscr.io/linuxserver/airsonic-advanced:latest
+    container_name: airsonic-advanced
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Dublin
+ #     - CONTEXT_PATH=http://i3x.local #optional
+    volumes:
+      - /home/jonw/docker/airsonic-adv:/config
+      - /home/jonw/Music/music.hq:/music
+      - /home/jonw/docker/airsonic-adv/playlists:/playlists
+      - /home/jonw/docker/airsonic-adv/podcasts:/podcasts
+ #     - /home/jonw/docker/airsonic-config/media:/media #optional
+    network_mode: "host"
+    dns:
+      - 1.1.1.1
+      - 1.0.0.1
+#    devices:
+#      - /dev/snd:/dev/snd #optional
+    restart: unless-stopped
